@@ -1,0 +1,49 @@
+@media screen and (max-width: 2560px) {
+    .cp1{
+        top: 10.5rem;    
+    }
+}
+@media screen and (max-width: 1920px) {
+    .canvas {
+        width: 200vw;
+        height: 100vh;
+        margin-left: -50%;
+        background-color: #000;
+        position: fixed;
+        bottom: 0;
+        transform: perspective(60vh) rotateX(90deg) translateZ(-10rem);
+    }
+    .logo_text{
+        font-size: 8rem;
+    }
+    .slide_item{
+        max-width: calc(100% - 44rem);
+    }
+    .cp1{
+        top: 8.5rem;
+    }
+}
+@media screen and (max-width: 1440px){
+    .parallax_menu{
+        width: 16rem;
+        left: 6rem;
+        bottom: calc(50% - 9rem)
+    }
+    .slide_item{
+        max-width: calc(100% - 28rem);
+    }
+    .section{
+        font-size: 1.8rem;
+    }
+    .menu_item.au_m{
+        line-height: 6rem;
+    }
+    /* .cp1{
+        top: 0.5rem;
+    } */
+}
+@media screen and (max-width: 414px){
+    .jdg{
+        font-size: 1.5rem;
+    }
+}

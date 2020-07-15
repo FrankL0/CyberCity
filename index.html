@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrankLo</title>
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFFmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0MzUyLCAyMDIwLzAxLzMwLTE1OjUwOjM4ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTA2LTIwVDIzOjQxOjEzKzA4OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0wNi0yMFQyMzo0MzozMyswODowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wNi0yMFQyMzo0MzozMyswODowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpkYzQ0YTQ5My1lM2Y4LTU0NDYtYTJjMy0zYWU3MzMyOWI2YTUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ZGM0NGE0OTMtZTNmOC01NDQ2LWEyYzMtM2FlNzMzMjliNmE1IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6ZGM0NGE0OTMtZTNmOC01NDQ2LWEyYzMtM2FlNzMzMjliNmE1Ij4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpkYzQ0YTQ5My1lM2Y4LTU0NDYtYTJjMy0zYWU3MzMyOWI2YTUiIHN0RXZ0OndoZW49IjIwMjAtMDYtMjBUMjM6NDE6MTMrMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMS4xIChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7SFPUlAAABcUlEQVQ4jW3SMWtUQRQF4G+DnUWCVZAQXxtQsrGxXbC1eIJ99ieksBUiBNIYEmwsRfwB2YC2ImilgqsWlnkigoEUz4CYQliLubOOgw+GN3fm3HPOvXMHs9nMs8En1TfGJoZYwhT3MSlBt2bXLNSZ2MY+RujQB9FjHNTgC1X8Mv4fYt+HehPEK3E+ygmlgzYI13GMdzgMF10k3gzStnbQ4AZe46rUgzkIZ1jF18C2oh/ZwTZ+4hwP8EVqXl6rgXtUlDkuCVosx+VOxEeFgyNsYDeUR5kglzDFpVDLcRt2m0I1l9vHmjuY4LL0TG0B7qrkcVbO5wtF0OAttvz/WwryRX+Ha04wjcM7+B4qjTSNm7E/COwwSDr+HaRpXF7B9Ujog7iP+3X8kAatKx3APbzBGl7gJJS+4bQo872iTyXBK9zFABfxC0+kvpwHwWfcDkfqEuAj9qT3PpTeexHP8TRWXybUBPBQGt0hfof9lShxUoP/ACQGXaSoNNMbAAAAAElFTkSuQmCC"
+        type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/augmented-ui/augmented.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Orbitron:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90fea4eadb.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
+    <!-- <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function () {
+            var a, b = document.createElement("style");
+            return b.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(b), a = !!(window.CSS &&
+                    window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), b.parentNode
+                .removeChild(b), a
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="mask"></div>
+    
+    <div class="logo">
+        <h1 class="logo_text cp1">CYBER_K</h1>
+        <h1 class="logo_text cp2">CYBER_K</h1>
+        <h1 class="logo_subtext"><a href="mailto:cruise1985r@outlook.com?subject=邮件标题&body=邮件内容"
+                style="color: #fb0aff;">FrankLo</a></h1>
+    </div>
+    <div class="parallax_menu">
+        <div class="menu_item au_m" augmented-ui="tr-clip bl-clip br-clip-y exe">
+            <div class="section" onclick="slideright()">
+                <p data-text="WORKS">WORKS</p>
+            </div>
+            <div class="section">
+                <p data-text="ABOUT">ABOUT</p>
+            </div>
+            <div class="section">
+                <p data-text="BLOG">BLOG</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="canvas">
+        <div class="grid_ground">
+            <div class="grid_item"></div>
+        </div>
+        <script>
+            var ground = document.querySelector('.grid_ground');
+            for (var i = 1; i < 800; i++) {
+                var griditem = document.querySelector('.grid_item');
+                const clone = griditem.cloneNode(true);
+                ground.appendChild(clone);
+            }
+        </script>
+    </div>
+
+
+    <div class="sky">
+        <div class="stars">
+            <div class="star" id="stars1"></div>
+            <div class="star" id="stars2"></div>
+            <div class="star" id="stars3"></div>
+        </div>
+        <div class="city">
+            <img src="./asset/city.png" alt="">
+        </div>
+        <div class="sun"></div>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/GridToFullscreenEffect.js"></script>
+    <script src="js/basicDemo.js"></script>
+    <script>
+        function is_wechat() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        if (is_wechat() || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            var jdg = document.createElement("div");
+            var txt = document.createTextNode('😢请使用Webkit，Mozilla，Safari内核的浏览器');
+            jdg.appendChild(txt);
+            document.body.appendChild(jdg);
+            jdg.className = 'jdg';
+        } else {
+            document.write("其他浏览器")
+        }
+    </script>
+    <script>
+        let currentIndex;
+        const itemsWrapper = document.getElementById("itemsWrapper");
+        const thumbs = [...itemsWrapper.querySelectorAll("img.grid__item-img:not(.grid__item-img--large)")];
+        const fullviewItems = [...document.querySelectorAll(".fullview__item")];
+        const backToGridCtrl = document.querySelector(".fullview__close");
+        const transitionEffectDuration = 1.8;
+
+        const transitionEffect = createDemoEffect({
+            activation: {
+                type: "closestCorner"
+            },
+            timing: {
+                duration: transitionEffectDuration
+            },
+            transformation: {
+                type: "flipX"
+            },
+            flipBeizerControls: {
+                c0: {
+                    x: 0.4,
+                    y: -0.8
+                },
+                c1: {
+                    x: 0.5,
+                    y: 0.9
+                }
+            },
+            onToFullscreenStart: ({
+                index
+            }) => {
+                currentIndex = index;
+                thumbs[currentIndex].style.opacity = 0;
+
+                /*
+                TweenLite.to(itemsWrapper, .5, {
+                	ease: Quint.easeInOut,
+                	scale: 0.5,
+                	opacity: 0
+                });
+                */
+
+                toggleFullview();
+            },
+            /*
+            onToGridStart: ({ index }) => {
+            	TweenLite.to(itemsWrapper, 1, {
+            		ease: Quint.easeOut,
+            		scale: 1,
+            		opacity: 1
+            	});
+
+            	toggleFullview();
+            },
+            */
+            onToGridFinish: ({
+                index,
+                lastIndex
+            }) => {
+                thumbs[lastIndex].style.opacity = 1;
+                fullviewItems[currentIndex].classList.remove("fullview__item--current");
+            },
+            easings: {
+                toFullscreen: Quint.easeOut,
+                toGrid: Quint.easeOut
+            }
+        });
+        transitionEffect.init();
+
+        const toggleFullview = () => {
+            if (transitionEffect.isFullscreen) {
+                TweenLite.to(fullviewItems[currentIndex].querySelector(".fullview__item-title"), 0.2, {
+                    ease: Quad.easeOut,
+                    opacity: 0,
+                    x: "0%"
+                });
+                TweenLite.to(backToGridCtrl, 0.2, {
+                    ease: Quad.easeOut,
+                    opacity: 0,
+                    scale: 0
+                });
+
+                transitionEffect.toGrid();
+            } else {
+                fullviewItems[currentIndex].classList.add("fullview__item--current");
+
+                TweenLite.to(fullviewItems[currentIndex].querySelector(".fullview__item-title"), 0.8, {
+                    ease: Expo.easeOut,
+                    startAt: {
+                        x: "0%"
+                    },
+                    opacity: 1,
+                    x: "0%",
+                    delay: transitionEffectDuration * 0.3
+                });
+                TweenLite.to(backToGridCtrl, 0.8, {
+                    ease: Expo.easeOut,
+                    startAt: {
+                        scale: 0
+                    },
+                    opacity: 1,
+                    scale: 1,
+                    delay: transitionEffectDuration * 0.2
+                });
+            }
+        };
+
+        backToGridCtrl.addEventListener("click", () => {
+            if (transitionEffect.isAnimating) {
+                return;
+            }
+            toggleFullview();
+        });
+
+        // 预载图片
+        imagesLoaded(document.querySelectorAll("img"), instance => {
+            //https://www.techrepublic.com/article/preloading-and-the-javascript-image-object/
+            document.body.classList.remove("loading");
+
+            // Make Images sets for creating the textures.
+            let images = [];
+            for (var i = 0, imageSet = {}; i < instance.elements.length; i++) {
+                let image = {
+                    element: instance.elements[i],
+                    image: instance.images[i].isLoaded ? instance.images[i].img : null
+                };
+                if (i % 2 === 0) {
+                    imageSet = {};
+                    imageSet.small = image;
+                }
+
+                if (i % 2 === 1) {
+                    imageSet.large = image;
+                    images.push(imageSet);
+                }
+            }
+            transitionEffect.createTextures(images);
+        });
+    </script>
+</body>
+
+</html>
